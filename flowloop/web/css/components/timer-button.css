@@ -1,0 +1,29 @@
+@import '../variables.css';
+
+.timer-button {
+  margin: 15px 0;
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 50px 40px;
+  animation: pop-in 300ms ease-out;
+  transform: translate3d(0, 0, 0);
+  transition:
+    transform 25ms ease-out,
+    box-shadow 75ms ease-out,
+    height 75ms ease-out,
+    width 75ms ease-out,
+    line-height 75ms ease-out,
+    background-color 75ms linear;
+
+  &.-work {
+    background: white;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+
+  &.-break {
+    display: block;
+    background: black;
+    color: white;
+  }
+}

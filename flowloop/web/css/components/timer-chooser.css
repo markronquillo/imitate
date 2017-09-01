@@ -1,0 +1,5 @@
+@import '../variables.css';
+
+.timer-chooser {
+  display: flex;
+}

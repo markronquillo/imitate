@@ -1,0 +1,108 @@
+@import '../variables.css';
+
+/* Normalize/reset */
+@import 'normalize.css';
+@import 'reset.css';
+
+/* Vendor */
+@import 'hint.css';
+
+@apply --ion-font;
+
+/*
+ * Reset, antialias
+ */
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none; /* disable callout, image save panel (popup) */
+  -webkit-tap-highlight-color: transparent; /* turn off link highlight */
+}
+
+button,
+input,
+textarea {
+  font-size: 100%;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+  outline: 0;
+}
+
+html {
+  background: var(--background);
+  color: var(--text-color);
+  user-select: none;
+}
+
+body {
+  line-height: 1.6;
+}
+
+html,
+input,
+textarea,
+button,
+td,
+th {
+  font-family: var(--sans);
+}
+
+/*
+ * Height
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-root {
+  min-height: 100%;
+}
+
+/*
+ * Cursor
+ */
+
+body {
+  cursor: default;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+/*
+ * Font size
+ */
+
+html {
+  font-size: 14px;
+
+  @media (width > 480px) {
+    font-size: 15px;
+  }
+
+  @media (width > 768px) {
+    font-size: 16px;
+  }
+}
+
+/*
+ * Button outline
+ */
+
+button:active,
+button:focus,
+a:active,
+a:focus {
+  outline: 0;
+}

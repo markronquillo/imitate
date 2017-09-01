@@ -1,0 +1,37 @@
+@import '../variables.css';
+
+.timer-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+
+  & > .topleft {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+  }
+}
+
+.timer-layout > .body {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+
+  & > * {
+    flex: 0 0 auto;
+  }
+
+  & > .space {
+    flex: 1 1 50%;
+  }
+}
+
